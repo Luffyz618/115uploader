@@ -1,0 +1,14 @@
+# 忽略 config/ 下的所有文件，但保留 .gitkeep
+config/*
+!config/.gitkeep
+
+# 忽略 upload/ 下的所有文件，但保留 .gitkeep
+upload/*
+!upload/.gitkeep
+
+# 忽略日志和临时文件
+*.log
+*.tmp
+
+# 忽略备份文件
+*.save

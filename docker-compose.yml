@@ -1,0 +1,13 @@
+services:
+  115uploader:
+    image: luffy168/115uploader:latest  
+    container_name: 115uploader
+    environment:
+      - COOKIE_115=你的115cookie   # 必填：替换成你的 115 Cookie
+      - CID=你的CID                # 必填：目标文件夹 ID
+      - AUTO_DELETE=false          # 测试功能，谨慎开启，上传完成后是否删除文件（true/false），默认不删除
+    volumes:
+      - ./config:/config
+      - ./upload:/data
+    restart: unless-stopped
+

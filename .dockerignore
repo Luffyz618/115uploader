@@ -1,0 +1,15 @@
+# 不需要复制进镜像的内容
+.git
+.gitignore
+.dockerignore
+docker-compose.yaml
+Dockerfile
+README.md
+
+# Windows / macOS 临时文件
+Thumbs.db
+.DS_Store
+
+# 挂载目录（用 volumes，不打包）
+config
+upload
