@@ -20,12 +20,7 @@
 
 ## 🚀 快速开始
 
-### 1. 拉取镜像
-```bash
-docker pull luffy168/115uploader:latest
-```
-
-### 2. 使用 docker-compose 部署
+### 使用 docker-compose 部署
 创建 `docker-compose.yml`：
 
 ```yaml
@@ -41,12 +36,6 @@ services:
       - ./config:/config           # 存放配置和日志
       - ./upload:/data             # 存放待上传文件
     restart: unless-stopped
-```
-
-然后运行：
-
-```bash
-docker compose up -d
 ```
 
 ---
