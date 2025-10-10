@@ -31,7 +31,7 @@ services:
     environment:
       - COOKIE_115=你的115cookie   # ⚠️ 必填：115 登录 Cookie
       - CID=你的CID                # ⚠️ 必填：网盘目标文件夹 ID（上传到哪个目录）
-      - AUTO_DELETE=false          # 可选：是否上传完成后删除本地文件（默认 false）
+      - AUTO_DELETE=false          # 测试功能，谨慎开启，是否上传完成后删除本地文件（默认 false）
     volumes:
       - ./config:/config           # 存放配置和日志
       - ./upload:/data             # 存放待上传文件
